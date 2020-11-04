@@ -349,7 +349,7 @@
           min: null,
           max: null
         },
-        clearable: true,
+        clearable: true
       };
     },
 
