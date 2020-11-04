@@ -8,16 +8,18 @@ IMPORTANT: MODIFICATION MAY CAUSE SOME UNKNOWN ISSUES, PLEASE USE THIS CAREFULLY
 
 ## Usage
 
+```js
 // vue.config.js
 module.exports = {
   configureWebpack: {
     resolve: {
       alias: {
-        'element-ui': '@pwpapp/better-element-ui',
+        'element-ui': '@pwp-app/better-element-ui',
       },
     },
   },
 };
+```
 
 ## LICENSE
 
