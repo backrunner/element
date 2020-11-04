@@ -9,7 +9,6 @@
         <span>{{ checkedSummary }}</span>
       </el-checkbox>
     </p>
-    
     <div :class="['el-transfer-panel__body', hasFooter ? 'is-with-footer' : '']">
       <el-input
         class="el-transfer-panel__filter"
@@ -230,9 +229,14 @@
 
     methods: {
       updateAllChecked() {
-        const checkableDataKeys = this.checkableData.map(item => item[this.keyProp]);
-        this.allChecked = checkableDataKeys.length > 0 &&
-          checkableDataKeys.every(item => this.checked.indexOf(item) > -1);
+        let checkObj = {};
+        this.checked.forEach((item, index) => {
+          checkObj[item] = true;
+        });
+        this.allChecked =
+          this.checkableData.length > 0 &&
+          this.checked.length > 0 &&
+          this.checkableData.every((item) => checkObj[item[this.keyProp]]);
       },
 
       handleAllCheckedChange(value) {
