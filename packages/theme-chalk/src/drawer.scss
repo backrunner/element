@@ -133,6 +133,9 @@ $directions: rtl, ltr, ttb, btt;
     left: 0;
     overflow: hidden;
     margin: 0;
+    div, span, button, i {
+      outline: none;
+    }
   }
 
   &__header {
@@ -164,6 +167,7 @@ $directions: rtl, ltr, ttb, btt;
 
   &__body {
     flex: 1;
+    overflow-y: auto;
     & > * {
       box-sizing: border-box;
     }

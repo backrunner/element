@@ -1,5 +1,62 @@
 ## 更新日志
 
+### 2.14.1
+
+*2020-11-11*
+
+#### Bug 修复
+
+- Popover
+  - 兼容 Vue 2.6 新 v-slot 语法 (#20424 by @iamkun)
+
+#### 优化
+
+- I18n
+  - 更新阿拉伯语翻译 (#20202 by @elkattan)
+  - 更新维吾尔语翻译 (#20177 by @IlhamTahir)
+
+### 2.14.0
+
+*2020-10-29*
+
+#### 非兼容性更新
+
+- Popconfirm
+  - 事件名称修改为 `confirm`, `cancel` (#20240 by @hugiron)
+
+#### Bug 修复
+
+- Progress
+  - 修复参数错误的问题 (#19985 by @Caaalabash)
+
+#### 优化
+
+- I18n
+  - 更新俄语翻译 (#19451 by @yangirov)
+  - 更新高棉语翻译 (#20077 by @Sovai)
+  - 更新乌克兰语翻译 (#20344 by @MammutAlex)
+
+### 2.13.2
+
+*2020-05-18*
+
+#### Bug 修复
+
+- Autocomplete
+  - 修复 'change event' 错误 (#19200 by @sxzz)
+- Image
+  - 更新错误状态 (#19194 by @lhx6538665)
+
+#### 优化
+
+- I18n
+  - 更新 ru-RU popconfirm 翻译 (#19220 by @Opppex)
+  - 更新 vi 翻译 (#19244 by @quangln2810)
+  - 更新 Catalan 和 Spanish 翻译 (#19296 by @Ismaaa)
+  - 更新 Indonesia 翻译 (#19320) by @therour)
+  - 更新 Brazilian Portuguese 翻译 (#19374 by @diegomengarda)
+
+
 ### 2.13.1
 
 *2020-04-13*
