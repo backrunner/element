@@ -135,7 +135,7 @@ $directions: rtl, ltr, ttb, btt;
     overflow: hidden;
     margin: 0;
     div, span, button, i {
-      outline: none;
+      outline: 0;
     }
   }
 
