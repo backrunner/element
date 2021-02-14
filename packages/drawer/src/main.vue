@@ -19,7 +19,7 @@
           :aria-label="title"
           class="el-drawer"
           :class="[direction, customClass]"
-          :style="isHorizontal ? `width: ${formatedSize}` : `height: ${formatedSize}`"
+          :style="isHorizontal ? `width: ${drawerSize}` : `height: ${drawerSize}`"
           ref="drawer"
           role="dialog"
           tabindex="-1"
@@ -93,7 +93,7 @@ export default {
       default: true
     },
     size: {
-      type: [String, Number],
+      type: [Number, String],
       default: '30%'
     },
     title: {
@@ -116,7 +116,7 @@ export default {
     isHorizontal() {
       return this.direction === 'rtl' || this.direction === 'ltr';
     },
-    formatedSize() {
+    drawerSize() {
       return typeof this.size === 'number' ? `${this.size}px` : this.size;
     }
   },
