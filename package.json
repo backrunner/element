@@ -1,6 +1,6 @@
 {
   "name": "@pwp-app/better-element-ui",
-  "version": "2.15.2-prev-1",
+  "version": "2.15.3-prev-1",
   "description": "A Component Library for Vue.js.",
   "main": "lib/element-ui.common.js",
   "files": [
