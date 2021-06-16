@@ -118,3 +118,17 @@
   opacity: 0;
   transform: translate(-50%, -100%);
 }
+
+
+@media (max-width: 767px) {
+  @include b(message) {
+    min-width: 286px;
+    max-width: 80vw;
+  }
+}
+
+@media (max-width: 320px) {
+  @include b(message) {
+    max-width: 308px;
+  }
+}
