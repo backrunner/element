@@ -91,7 +91,7 @@ export function addClass(el, cls) {
     }
   }
   if (!el.classList) {
-    el.className = curClass;
+    el.setAttribute('class', curClass);
   }
 };
 
@@ -112,7 +112,7 @@ export function removeClass(el, cls) {
     }
   }
   if (!el.classList) {
-    el.className = trim(curClass);
+    el.setAttribute('class', trim(curClass));
   }
 };
 
@@ -183,7 +183,7 @@ export const isScroll = (el, vertical) => {
       : getStyle(el, 'overflow-x')
     : getStyle(el, 'overflow');
 
-  return overflow.match(/(scroll|auto)/);
+  return overflow.match(/(scroll|auto|overlay)/);
 };
 
 export const getScrollContainer = (el, vertical) => {
